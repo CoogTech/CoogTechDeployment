@@ -29,7 +29,7 @@
 </template>
   
 <script>
-import QuarterlyReports from '../components/quarterlyreports.vue'
+import QuarterlyReports from '../components/QuarterlyReports.vue'
 
 import FinancialReports from '../components/FinancialReports.vue'
 
