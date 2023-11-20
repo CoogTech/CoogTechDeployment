@@ -161,7 +161,7 @@ const router = createRouter({
     {
       path: '/AdminOrders',
       name: 'AdminOrders',
-      component: () => import('../views/Adminorders.vue')
+      component: () => import('../views/AdminOrders.vue')
     },
     {
       path: '/AdminOrderDetails/:id',
