@@ -154,6 +154,8 @@ body {
 h1, h2 {
   text-align: center;
   margin-bottom: 20px;
+  font-weight: bold;
+
 }
 
 div {

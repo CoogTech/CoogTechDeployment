@@ -4,7 +4,7 @@
         <div class="container mx-auto text-center">
             <h1 class="text-5xl font-bold mb-4" style="color: rgb(4, 69, 4);">Discover Our Unique Collection</h1>
             <p class="text-lg font-bold mb-8 text-white-500" style="color: rgb(4, 69, 4);">Explore a wide range of
-                high-quality balloons and stylish t-shirts.</p>
+                high-quality T-Shirts, Tumblers, Ballon Adornments, and even SWEETS!</p>
             <router-link to="/catalog" class="button">Shop Now</router-link>
         </div>
     </section>
@@ -33,7 +33,7 @@
                 </div>
                 <!-- Product 1 -->
                 <div class="relative">
-                    <img src="@/assets/Chamoy.jpg" alt="Candle 1" class="rounded-lg" style="width: 600px; height: 400px;">
+                    <img src="@/assets/Enchilados.jpg" alt="Candle 1" class="rounded-lg" style="width: 600px; height: 400px;">
                     <div
                         class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-400 transition-opacity">
                         <a href="/product/1" class="text-white text-lg font-semibold hover:underline">View Details</a>
@@ -49,7 +49,7 @@
     <section id="about-us">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold mb-2" style="color: rgb(4, 69, 4);">About us</h2>
-            <p class="text-green-700 text-sm mb-2" style="color: rgb(4, 69, 4);">
+            <p class="text-lg font-bold mb-8 text-white-500" style="color: rgb(4, 69, 4);">
                 Starting my craft business was a labor of love that emerged from a passion for creativity and a desire to
                 balance my roles as a mom of four energetic kids and a full-time elementary school worker. It all began with
                 a simple idea: to turn my crafting hobbies into a fulfilling side hustle. After putting in countless late

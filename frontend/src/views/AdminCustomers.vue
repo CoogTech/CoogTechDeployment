@@ -24,7 +24,7 @@
             <td>{{ customer.STATE.State }}</td>
             <td>{{ customer.ZipCode }}</td>
             <td><a href="tel:{{ customer.CustomerPhone }}">{{ customer.CustomerPhone }}</a></td>
-            <td><a href="mailto:{{ customer.CustomerEmail }}"> {{ customer.CustomerEmail }} </a></td>
+            <td><a href="mailto: customer.CustomerEmail"> {{ customer.CustomerEmail }} </a></td>
           </tr>
         </tbody>
       </table>
@@ -94,8 +94,8 @@
   }
   
   .customers-table thead tr {
-    background-color: #4c89af;
-    color: #fff;
+    background-color: #f2f2f2;
+    color: #000000;
   }
   
   .customers-table tbody tr:hover {
@@ -107,9 +107,9 @@
     font-weight: bold;
     margin-bottom: 20px;
     text-transform: uppercase;
-    border-bottom: 2px solid #4c89af;
+    border-bottom: 2px solid #000000;
     padding-bottom: 10px;
-    color: #4c89af;
+    color: #000000;
   }
   </style>
   

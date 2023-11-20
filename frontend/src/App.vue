@@ -2,46 +2,46 @@
   <div id="landing-page" class="flex flex-col min-h-screen bg-f8ebe6 justify-center">
     <header class="py-4 px-6 shadow-sm bg-fafafa">
       <div class="container mx-auto flex justify-between items-center">
-        <router-link to="/" class="text-gray-600 hover:text-gray-500 flex items-center header-item">
-        <h1 class="text-2xl text-gray-700 font-semibold">The Craft Shack</h1>
+        <router-link to="/" class="text-green-900 hover:text-green-700 flex items-center header-item">
+        <h1 class="text-2xl text-green-900 hover:text-green-700 font-semibold">The Craft Shack</h1>
         </router-link>
       <div class="flex space-x-4">
         <div class="flex space-x-2" v-if="loggedIn && role === 'customer'">
-        <router-link to="/AccountInfo" class="text-gray-600 hover:text-gray-500 flex items-center header-item">
+        <router-link to="/AccountInfo" class="text-green-900 hover:text-green-700 flex items-center header-item">
           <span class="material-icons">manage_accounts</span> Account Info
         </router-link>
-        <router-link to="/orderHistory" class="text-gray-600 hover:text-gray-500 flex items-center header-item">
+        <router-link to="/orderHistory" class="text-green-900 hover:text-green-700 flex items-center header-item">
           <span class="material-icons">history</span> Order History
         </router-link>
-        <router-link to="/cart" class="text-gray-600 hover:text-gray-500 flex items-center header-item">
+        <router-link to="/cart" class="text-green-900 hover:text-green-700 flex items-center header-item">
         <span class="material-icons">shopping_cart</span> Cart
       </router-link>
-      <a href="/#about-us" class="text-gray-600 hover:text-gray-500 flex items-center header-item">
+      <a href="/#about-us" class="text-green-900 hover:text-green-700 flex items-center header-item">
         <span class="material-icons">info</span> About Us
       </a>
       </div>
       <div class="flex space-x-2" v-if="loggedIn && role === 'admin'">
-        <router-link to="/AdminDashboard" class="text-gray-600 hover:text-gray-500 flex items-center header-item">
+        <router-link to="/AdminDashboard" class="text-green-900 hover:text-green-700 flex items-center header-item">
           <span class="material-icons">calendar_month</span> Calendar
         </router-link>
-        <router-link to="/AdminProducts" class="text-gray-600 hover:text-gray-500 flex items-center header-item">
+        <router-link to="/AdminProducts" class="text-green-900 hover:text-green-700 flex items-center header-item">
           <span class="material-icons">storefront</span> Products
         </router-link>
-        <router-link to="/AdminCustomers" class="text-gray-600 hover:text-gray-500 flex items-center header-item">
+        <router-link to="/AdminCustomers" class="text-green-900 hover:text-green-700 flex items-center header-item">
           <span class="material-icons">people_alt</span> Customers
         </router-link>
-        <router-link to="/AdminOrders" class="text-gray-600 hover:text-gray-500 flex items-center header-item">
+        <router-link to="/AdminOrders" class="text-green-900 hover:text-green-700 flex items-center header-item">
           <span class="material-icons">forum</span> Orders
         </router-link>
-        <router-link to="/AdminReports" class="text-gray-600 hover:text-gray-500 flex items-center header-item">
+        <router-link to="/AdminReports" class="text-green-900 hover:text-green-700 flex items-center header-item">
           <span class="material-icons">insert_chart</span> Reports
         </router-link>
       </div>
       
-      <router-link to="/" v-if="loggedIn" @click="logout()" class="text-gray-600 hover:text-gray-500 flex items-center header-item">
+      <router-link to="/" v-if="loggedIn" @click="logout()" class="text-green-900 hover:text-green-700 flex items-center header-item">
         <span class="material-icons">exit_to_app</span> Logout
       </router-link>
-      <router-link v-else to="/login" class="text-gray-600 hover:text-gray-500 flex items-center header-item">
+      <router-link v-else to="/login" class="text-green-900 hover:text-green-700 flex items-center header-item">
         <span class="material-icons">login</span> Login
       </router-link>
         </div>
@@ -59,7 +59,7 @@
         <div class="grid grid-cols-3 gap-8 py-8">
           <!-- Contact Us Column -->
           <div>
-            <h2 class="text-lg font-semibold mb-2 footer-item">Contact Us</h2>
+            <h2 class="text-lg text-green-900 font-semibold mb-2 footer-item">Contact Us</h2>
 
             <!-- Phone Number -->
             <div class="mb-2">
@@ -76,7 +76,7 @@
 
           <!-- Follow Us Column -->
           <div class="flex flex-col justify-center items-center">
-            <h2 class="text-lg font-semibold mb-2">Follow Us</h2>
+            <h2 class="text-lg text-green-900 font-semibold mb-2">Follow Us</h2>
             <div class="flex justify-center items-center mt-4">
               <a :href="instagramLink" target="_blank" rel="noopener noreferrer"
                 class="text-green-900 hover:text-green-700 mx-4 footer-item">
@@ -95,7 +95,7 @@
 
           <!-- Useful Links and FAQ Column -->
           <div class="flex flex-col justify-center items-center">
-            <h2 class="text-lg font-semibold mb-2">Link</h2>
+            <h2 class="text-lg text-green-900 font-semibold mb-2">Link</h2>
             <div class="text-lg font-semibold mb-2 mt-4">
               <router-link to="/faq" class="text-green-900 hover:text-green-700">
                 FAQ

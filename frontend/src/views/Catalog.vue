@@ -5,8 +5,8 @@
             <label for="productType" class="dropdown-label">Select Type:</label>
             <select v-model="selectedType" id="productType" class="dropdown">
                 <option value="">All</option>
-                <option value="Tshirt">Tshirts</option>
-                <option value="Candy">Candy</option>
+                <option value="Tshirt">T-Shirts</option>
+                <option value="Sweets">Sweets</option>
                 <option value="Tumbler">Tumblers</option>
                 <option value="Balloon">Balloons</option>
                 <!-- Add options for other types as needed -->

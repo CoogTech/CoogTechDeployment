@@ -6,25 +6,25 @@
           <!-- Table headers -->
           <thead>
             <tr class="text-black">
-              <th>ProductID</th>
               <th>Name</th>
               <th>Type</th>
               <th>Color</th>
               <th>Size</th>
               <th>Price Per Unit</th>
               <th>Quantity</th>
+              <th>Design</th>
             </tr>
           </thead>
           <!-- Table body -->
           <tbody>
             <tr v-for="product in orderedProducts.products" :key="product.OrderProductsID">
-              <td>{{ product.ProductID }}</td>
               <td>{{ product.ProductName }}</td>
               <td>{{ product.ProductType }}</td>
               <td>{{ product.ProductColor }}</td>
               <td>{{ product.ProductSize }}</td>
               <td>${{ product.ProductPrice.toFixed(2) }}</td>
               <td>{{ product.Quantity }}</td>
+              <td><v-img :src="product.ProductImage" cover /></td>
             </tr>
           </tbody>
         </table>

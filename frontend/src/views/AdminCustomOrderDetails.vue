@@ -16,7 +16,7 @@
           <p><strong>Scheduled Delivery Date:</strong> {{ formatDate(orderDetails.DateScheduled) }}</p>
           <p><strong>Date Delivered:</strong> {{ formatDate(orderDetails.DateDelivered) }}</p>
           <p></p>
-          <button @click="showEditForm(orderDetails)">Edit Order</button>
+          <button class="back-button" @click="showEditForm(orderDetails)">Edit Order</button>
 
           <div v-if="currentForm != null" class="form-overlay">
             <CustomOrdersEdit v-if="currentForm === 'edit'" :order="selectedOrder" @formClosed="currentForm = null" :customOrderID="this.selectedOrder.CustomOrderID" />

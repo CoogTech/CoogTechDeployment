@@ -1,6 +1,5 @@
 <template>
   <div class="product-details">
-    <h1>Product Details</h1>
     <div v-for="similarProduct in similarProducts" :key="similarProduct.ProductID" class="product-column">
       <div class="product-item" v-if="product">
         <v-card  class="product-card">

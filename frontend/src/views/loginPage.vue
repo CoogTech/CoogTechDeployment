@@ -2,6 +2,10 @@
   <div class="login-form ma-3 pa-4">
       <form @submit.prevent="login" class="login-form-container shadow-md center">
         <div class="form-content">
+          <div class="notice">
+        <p>Ready to order?</p>
+        <p>Please Login or Sign Up!</p>
+      </div>
           <h2 class="text-4xl text-green-900 font-bold mb-6">Login</h2>
           <div class="mb-4">
               <label class="block text-1xl text-green-900 font-bold mb-2" for="username">Username</label>
@@ -31,12 +35,12 @@
               <button type="submit" class="button">Login</button>
           </div>
         </div>
-          <p class="mt-4 text-green-800 text-1xl">
-              <router-link to="/resetpassword" class="text-green-700 font-bold">Forgot Password</router-link>
+          <p class="mt-4 text-green-900 text-1xl">
+              <router-link to="/resetpassword" class="text-green-800 font-bold">Forgot Password</router-link>
 
           </p>
           <p class="mt-4 text-green-900 text-1xl">
-              Don't have an account? <router-link to="/signup" class="text-green-700 font-bold">Sign up</router-link>
+              Don't have an account? <router-link to="/signup" class="text-green-800 font-bold">Sign up</router-link>
           </p>
       </form>
   </div>
@@ -122,7 +126,6 @@ export default {
   justify-content: center;
   align-items: center;
   height: 70vh;
-  background-color: #f2f2f2;
 }
 
 .login-form-container {
@@ -158,5 +161,21 @@ export default {
 .password-input {
     display: flex;
     align-items: center;
+}
+.notice {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #fafafa; /* Update to your preferred color */
+  border: 1px solid #e17055; /* Update to your preferred color */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  color: #d35400; /* Update to your preferred text color */
+  font-weight: bold;
+}
+
+.notice p {
+  margin: 0;
+  font-size: 14px;
+  color: rgb(4, 69, 4);
 }
 </style>

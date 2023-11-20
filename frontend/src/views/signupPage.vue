@@ -32,7 +32,7 @@
                 <label class="block text-green-900 text-sm font-bold mb-2" for="phoneNumber">Phone Number</label>
                 <input v-model="userData.CustomerPhone"
                     class="w-full py-2 px-3 border border-green-300 rounded focus:outline-none focus:border-green-500"
-                    type="tel" id="phoneNumber" placeholder="Phone Number" required />
+                    type="tel" id="phoneNumber" placeholder="Phone Number" required pattern="^\d{10}$" />
             </div>
 
             <!-- City -->
