@@ -31,7 +31,6 @@
 
 <script>
 import OrderModal from '@/components/OrderModal.vue';
-import Sidebar from '@/components/Sidebar.vue';
 
 export default {
   components: {
