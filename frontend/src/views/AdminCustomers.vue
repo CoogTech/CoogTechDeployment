@@ -34,9 +34,6 @@
   <script>
   
   export default {
-    components: {
-      Sidebar
-    },
     data() {
       return {
         customers: [],
