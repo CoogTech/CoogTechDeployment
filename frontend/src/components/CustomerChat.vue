@@ -277,7 +277,7 @@ export default {
   font-size: 14px;
   padding: 5px;
   margin-bottom: 30px;
-  margin-left: 500px;
+  margin-left: 200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -288,7 +288,7 @@ export default {
   font-size: 14px;
   padding: 5px;
   margin-bottom: 30px;
-  margin-right: 500px;
+  margin-right: 200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 

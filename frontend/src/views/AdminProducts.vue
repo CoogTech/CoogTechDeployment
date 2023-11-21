@@ -316,8 +316,8 @@ export default {
   font-size: 14px;
   cursor: pointer;
   position: relative;
-  right: 0px;
-  bottom: 360px;
+  right: 110px;
+  bottom: 330px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
 }
 

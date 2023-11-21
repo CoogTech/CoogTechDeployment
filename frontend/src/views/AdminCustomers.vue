@@ -24,7 +24,7 @@
             <td>{{ customer.STATE.State }}</td>
             <td>{{ customer.ZipCode }}</td>
             <td><a href="tel:{{ customer.CustomerPhone }}">{{ customer.CustomerPhone }}</a></td>
-            <td><a href="mailto: customer.CustomerEmail"> {{ customer.CustomerEmail }} </a></td>
+            <td><a :href="'mailto:' + customer.CustomerEmail"> {{ customer.CustomerEmail }} </a></td>
           </tr>
         </tbody>
       </table>

@@ -112,14 +112,13 @@
         this.loading = true;
         this.clearTables();
 
-        const startDate = moment(this.startDate);
-
-        const firstDayOfNextMonth = startDate.clone().subtract(1, 'months').startOf('month').format('MM/DD/YYYY');;
-          const lastDayOfNextMonth = startDate.clone().subtract(1, 'months').endOf('month').format('MM/DD/YYYY');
-        
-          console.log(lastDayOfNextMonth)
-
         try {
+
+          const startDate = moment(this.startDate);
+
+          const firstDayOfNextMonth = startDate.clone().subtract(1, 'months').startOf('month').format('MM/DD/YYYY');;
+          const lastDayOfNextMonth = startDate.clone().subtract(1, 'months').endOf('month').format('MM/DD/YYYY');
+
           const response = await axios.get('http://localhost:8080/adminData/Reports/TotalSalesByType', {
             params: {
               startDate: firstDayOfNextMonth,
@@ -127,7 +126,8 @@
             },
           });
   
-          this.lastSalesByType = response.data;
+          this.lastSalesbyType = response.data;
+          console.log(this.lastSalesbyType)
           this.error = null;
         } catch (error) {
           console.error('Error fetching report:', error.response || error);

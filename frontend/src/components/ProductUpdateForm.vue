@@ -140,7 +140,7 @@ input[type="number"]{
   border-radius: 5px;
 }
   .product-update-form {
-    height: 900px;
+    height: 700px;
     width: 500px;
     padding: 20px;
     border: 1px solid #ccc;

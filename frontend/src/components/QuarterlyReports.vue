@@ -209,8 +209,8 @@ export default {
         const startDate = moment(this.startDate);
         const endDate = moment(this.endDate);
 
-        const firstDayOfLastMonth = startDate.clone().subtract(1, 'months').startOf('month').format('MM/DD/YYYY');;
-        const lastDayOfLastMonth = startDate.clone().subtract(2, 'months').endOf('month').format('MM/DD/YYYY');
+        const firstDayOfLastMonth = startDate.clone().subtract(2, 'months').startOf('month').format('MM/DD/YYYY');;
+        const lastDayOfLastMonth = startDate.clone().subtract(1, 'months').endOf('month').format('MM/DD/YYYY');
 
         const response = await axios.get('http://localhost:8080/adminData/Reports/Between-Dates/', {
           params: {

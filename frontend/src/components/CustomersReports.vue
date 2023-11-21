@@ -23,7 +23,7 @@
             <tr v-for="customer in topPayingCustomers" :key="customer.CustomerID">
               <td>{{ customer.CustomerID }}</td>
               <td>{{ customer.CustomerFirstName + ' ' + customer.CustomerLastName }}</td>
-              <td><a href="mailto:{{ customer.CustomerEmail }}"> {{ customer.CustomerEmail }} </a></td>
+              <td><a :href="'mailto:' + customer.CustomerEmail"> {{ customer.CustomerEmail }} </a></td>
               <td><a href="tel:{{ customer.CustomerPhone }}">{{ customer.CustomerPhone }}</a></td>
               <td>${{ customer.totalOrderSpending + customer.totalCustomOrderSpending }}</td>
             </tr>
